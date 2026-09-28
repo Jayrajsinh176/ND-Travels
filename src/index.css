@@ -16,6 +16,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Prevent sideways scrolling on mobile. "clip" (unlike "hidden")
+   doesn't create a scroll container; "hidden" is the fallback. */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
 body {
   margin: 0;
   font-family: var(--font-sans);
@@ -65,6 +74,15 @@ body {
 
 .reveal-right {
   transform: translateX(40px);
+}
+
+/* On small screens, side offsets push content past the viewport
+   edge — slide up instead. */
+@media (max-width: 767px) {
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(32px);
+  }
 }
 
 .reveal-scale {
