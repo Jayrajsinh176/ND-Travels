@@ -16,6 +16,7 @@ import TaxiService from "./pages/TaxiService";
 import DestinationDetailHero from "./components/destination/DestinationDetailHero";
 import DestinationDetail from "./components/destination/DestinationDetail";
 import Blog from "./pages/Blog";
+import Legal from "./pages/Legal";
 
 
 function App() {
@@ -56,6 +57,9 @@ function App() {
         
         {/* Blog */}
         <Route path="/blog" element={<Blog />} />
+
+        {/* Legal */}
+        <Route path="/legal" element={<Legal />} />
 
       </Routes>
 

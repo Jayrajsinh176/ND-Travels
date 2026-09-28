@@ -226,8 +226,8 @@ Thank you.`;
               </h3>
 
               <p className="mt-4 max-w-md text-sm leading-6 text-slate-600">
-                Sunrise Residency, Rajpipla,
-                Gujarat 393145, India
+                Shop No. 9, Avadhut Avenue Complex, Near Kalaghoda Circle,
+                Rajpipla, Gujarat 393145, India
               </p>
             </div>
 
@@ -553,7 +553,7 @@ Thank you.`;
           <div className="h-[380px] w-full md:h-[450px]">
             <iframe
               title="ND Tours and Travels Location"
-              src="https://www.google.com/maps?q=Sunrise+Residency,+Rajpipla,+Gujarat+393145,+India&output=embed"
+              src="https://www.google.com/maps?q=Avadhut+Avenue+Complex,+Kalaghoda+Circle,+Rajpipla,+Gujarat+393145,+India&output=embed"
               className="h-full w-full border-0"
               loading="lazy"
               allowFullScreen

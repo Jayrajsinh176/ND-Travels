@@ -3,13 +3,24 @@ import {
   FiInstagram,
   FiPhone,
   FiMail,
+  FiMapPin,
 } from "react-icons/fi";
 import { Link } from "react-router-dom";
+
+const quickLinks = [
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About Us" },
+  { to: "/destinations", label: "Destinations" },
+  { to: "/taxi-services", label: "Taxi Services" },
+  { to: "/contact", label: "Contact" },
+  { to: "/blog", label: "Blog" },
+  { to: "/legal", label: "Legal & Policies" },
+];
 
 function Footer() {
   return (
     <footer className="bg-[#0d2d55] text-white">
-      <div className="mx-auto w-full max-w-7xl px-6 py-12 sm:px-8 sm:py-14 lg:px-10 lg:py-16">
+      <div className="mx-auto w-full max-w-7xl px-6 py-12 sm:px-8 lg:px-10 lg:py-14">
 
         {/* ================= MAIN FOOTER ================= */}
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.3fr] lg:gap-12">
@@ -62,67 +73,17 @@ function Footer() {
               Quick Links
             </h3>
 
-            <ul className="mt-6 space-y-4">
-
-              {/* Home */}
-              <li>
-                <Link
-                  to="/"
-                  className="text-xs text-white/65 transition hover:text-orange-400 sm:text-[13px]"
-                >
-                  Home
-                </Link>
-              </li>
-
-              {/* About */}
-              <li>
-                <Link
-                  to="/about"
-                  className="text-xs text-white/65 transition hover:text-orange-400 sm:text-[13px]"
-                >
-                  About Us
-                </Link>
-              </li>
-
-              {/* Destinations */}
-              <li>
-                <Link
-                  to="/destinations"
-                  className="text-xs text-white/65 transition hover:text-orange-400 sm:text-[13px]"
-                >
-                  Destinations
-                </Link>
-              </li>
-
-              {/* Taxi Services */}
-              <li>
-                <Link
-                  to="/taxi-services"
-                  className="text-xs text-white/65 transition hover:text-orange-400 sm:text-[13px]"
-                >
-                  Taxi Services
-                </Link>
-              </li>
-
-              {/* Contact */}
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-xs text-white/65 transition hover:text-orange-400 sm:text-[13px]"
-                >
-                  Contact
-                </Link>
-              </li>
-              {/* Blog */}
-              <li>
-                <Link
-                  to="/blog"
-                  className="text-xs text-white/65 transition hover:text-orange-400 sm:text-[13px]"
-                >
-                  Blog
-                </Link>
-              </li>
-
+            <ul className="mt-5 grid grid-flow-col grid-rows-[repeat(4,auto)] justify-start gap-x-12 gap-y-3">
+              {quickLinks.map((link) => (
+                <li key={link.to}>
+                  <Link
+                    to={link.to}
+                    className="whitespace-nowrap text-xs text-white/65 transition hover:text-orange-400 sm:text-[13px]"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -135,7 +96,7 @@ function Footer() {
               Travel Services
             </h3>
 
-            <ul className="mt-6 space-y-4">
+            <ul className="mt-5 space-y-3">
 
               <li>
                 <Link
@@ -177,7 +138,7 @@ function Footer() {
             </h3>
 
             {/* Phone */}
-            <div className="mt-6 flex gap-3">
+            <div className="mt-5 flex gap-3">
               <FiPhone className="mt-0.5 h-4 w-4 shrink-0 text-white/65" />
 
               <div>
@@ -195,7 +156,7 @@ function Footer() {
             </div>
 
             {/* Email */}
-            <div className="mt-6 flex gap-3">
+            <div className="mt-5 flex gap-3">
               <FiMail className="mt-0.5 h-4 w-4 shrink-0 text-white/65" />
 
               <div>
@@ -211,11 +172,32 @@ function Footer() {
                 </a>
               </div>
             </div>
+
+            {/* Location */}
+            <div className="mt-5 flex gap-3">
+              <FiMapPin className="mt-0.5 h-4 w-4 shrink-0 text-white/65" />
+
+              <div>
+                <p className="text-xs text-white/65 sm:text-[13px]">
+                  Visit our office
+                </p>
+
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Avadhut+Avenue+Complex,+Kalaghoda+Circle,+Rajpipla,+Gujarat+393145"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 block text-xs font-medium leading-5 text-orange-400 transition hover:text-orange-300 sm:text-[13px]"
+                >
+                  Shop No. 9, Avadhut Avenue Complex, Near Kalaghoda Circle,
+                  Rajpipla, Gujarat 393145
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* ================= DIVIDER ================= */}
-        <div className="mt-12 border-t border-white/10 pt-6 sm:mt-14 sm:pt-7">
+        <div className="mt-10 border-t border-white/10 pt-6 sm:mt-12">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
 
             {/* Copyright */}
