@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="icon" type="image/webp" href="/images/favicon.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -127,7 +127,7 @@
   <body>
     <div id="page-loader" role="status" aria-label="Loading">
       <div class="loader-pin">
-        <img class="loader-logo" src="/images/favicon.png" alt="" />
+        <img class="loader-logo" src="/images/favicon.webp" alt="" />
         <div class="loader-shadow"></div>
       </div>
       <div class="loader-road">
@@ -151,9 +151,12 @@
       (function () {
         var start = Date.now();
         var MIN_VISIBLE = 800; // keep it on screen long enough to not flash
+        var MAX_WAIT = 10000; // never block the page for more than 10s
+        var done = false;
         function hide() {
           var loader = document.getElementById("page-loader");
-          if (!loader) return;
+          if (!loader || done) return;
+          done = true;
           setTimeout(function () {
             loader.classList.add("loader-hidden");
             setTimeout(function () { loader.remove(); }, 600);
@@ -161,6 +164,7 @@
         }
         if (document.readyState === "complete") hide();
         else window.addEventListener("load", hide);
+        setTimeout(hide, MAX_WAIT);
       })();
     </script>
     <script type="module" src="/src/main.jsx"></script>
