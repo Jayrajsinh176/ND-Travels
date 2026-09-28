@@ -197,6 +197,15 @@ function Navbar() {
               Contact
             </Link>
 
+            {/* Blog */}
+            <Link
+              to="/blog"
+              onClick={closeMobileMenu}
+              className="block rounded-lg px-4 py-3 text-sm text-white transition hover:bg-white/10 hover:text-orange-400"
+            >
+              Blog
+            </Link>
+
             {/* Mobile Book Now */}
             <a
               href="#booking"
