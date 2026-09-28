@@ -11,7 +11,7 @@ function HomeTaxi() {
     {
       name: "Dzire",
       subtitle: "Comfort Sedan",
-      image: "/images/Swiftdizer.png",
+      image: "/images/Taxi/Swiftdizer.webp",
       seats: "4+1",
       type: "Sedan",
       features: ["AC", "Comfortable", "Economical"],
@@ -19,7 +19,7 @@ function HomeTaxi() {
     {
       name: "Ertiga",
       subtitle: "Family Car",
-      image: "/images/Ertiga.png",
+      image: "/images/Taxi/Ertiga.webp",
       seats: "6+1",
       type: "MUV",
       features: ["AC", "Spacious", "Family Friendly"],
@@ -27,7 +27,7 @@ function HomeTaxi() {
     {
       name: "Innova Crysta",
       subtitle: "Premium Travel",
-      image: "/images/Innova.png",
+      image: "/images/Taxi/Innova.webp",
       seats: "7+1",
       type: "Premium",
       features: ["AC", "Luxury", "Long Distance"],

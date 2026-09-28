@@ -238,9 +238,9 @@ Thank you.`;
               </h3>
 
               <div className="mt-4 space-y-1 text-sm leading-6 text-slate-600">
-                <p>+91 XXXXX XXXXX</p>
-                <p>Mon–Sat: 9:00 AM – 6:00 PM</p>
-                <p>info@rudranshtravels.com</p>
+                <p>+91 9586995291</p>
+                <p>Mon–Sat: 10:00 AM – 6:00 PM</p>
+                <p>info@ndtoursandtravels.com</p>
               </div>
             </div>
           </div>

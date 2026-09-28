@@ -108,7 +108,7 @@ function QuickSteps() {
             <div className="relative mx-auto w-full max-w-lg overflow-hidden rounded-2xl">
 
               <img
-                src="/images/quick step.png"
+                src="/images/quick.webp"
                 alt="Traveler exploring a destination"
                 className="aspect-[4/4.2] w-full object-cover"
               />

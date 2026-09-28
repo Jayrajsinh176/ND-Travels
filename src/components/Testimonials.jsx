@@ -11,49 +11,43 @@ function Testimonials() {
   const testimonials = [
     {
       rating: "4.0",
-      name: "Michael Anderson",
+      name: "Amit Mehta",
       role: "Corporate Travel Consultant",
-      image: "https://i.pravatar.cc/100?img=12",
       text:
         "ND Tours and Travels handles all our company's business trips between Ahmedabad and Vadodara. Cars are always on time, drivers are professional, and billing is transparent every single time.",
     },
     {
       rating: "5.0",
-      name: "Emily Johnson",
+      name: "Neha Sharma",
       role: "Luxury Vacation Traveler",
-      image: "https://i.pravatar.cc/100?img=47",
       text:
         "Our Udaipur trip with ND Tours and Travels was beautifully planned. From the City Palace visit to the Lake Pichola boat ride to Jag Mandir, every detail was taken care of.",
     },
     {
       rating: "3.0",
-      name: "Olivia Martinez",
+      name: "Kavita Desai",
       role: "Marketing Manager",
-      image: "https://i.pravatar.cc/100?img=32",
       text:
         "Booked the Rann of Kutch package with the team. The White Rann and Rann Utsav arrangements were great, though I wish the hotel check-in had been a bit faster.",
     },
     {
       rating: "5.0",
-      name: "Daniel Wilson",
+      name: "Vikram Joshi",
       role: "Business Traveler",
-      image: "https://i.pravatar.cc/100?img=11",
       text:
         "Everything was perfectly organized from the beginning. ND Tours and Travels made our entire journey comfortable, simple, and completely stress-free.",
     },
     {
       rating: "4.0",
-      name: "Sophia Miller",
+      name: "Pooja Trivedi",
       role: "Family Traveler",
-      image: "https://i.pravatar.cc/100?img=44",
       text:
         "We took the kids to Saputara for a short family break and ND Tours and Travels planned it perfectly. The lake, the ropeway, and the gardens kept everyone happy.",
     },
     {
       rating: "5.0",
-      name: "James Taylor",
+      name: "Rohan Chauhan",
       role: "Adventure Traveler",
-      image: "https://i.pravatar.cc/100?img=13",
       text:
         "The Somnath and Gir package was fantastic. The jeep safari inside Gir National Park was the highlight of the trip, and the whole schedule was handled smoothly.",
     },
@@ -61,7 +55,6 @@ function Testimonials() {
       rating: "5.0",
       name: "Rajesh Patel",
       role: "Outstation Taxi Customer",
-      image: "https://i.pravatar.cc/100?img=15",
       text:
         "Took an outstation cab from Vadodara to the Statue of Unity through ND Tours and Travels. The car was clean, the driver knew the route well, and the fare matched exactly what was quoted.",
     },
@@ -69,7 +62,6 @@ function Testimonials() {
       rating: "4.0",
       name: "Priya Shah",
       role: "Airport Transfer Customer",
-      image: "https://i.pravatar.cc/100?img=45",
       text:
         "Used their airport transfer service from Rajpipla to Ahmedabad Airport for an early morning flight. The driver arrived well before time and the ride was comfortable throughout.",
     },
@@ -129,9 +121,9 @@ function Testimonials() {
             <div className="reveal reveal-right flex items-end lg:justify-end">
 
               <p className="max-w-sm text-xs leading-5 text-slate-500 lg:mt-12">
-                Thousands of travelers trust ND Tours and Travels for
-                personalized travel planning, seamless bookings,
-                and unforgettable journeys.
+                From personalized travel planning to seamless bookings,
+                we make every journey smooth, memorable, and
+                truly unforgettable.
               </p>
 
             </div>
@@ -141,13 +133,13 @@ function Testimonials() {
           {/* ================= TESTIMONIAL SCROLL ================= */}
           <div
             ref={testimonialRef}
-            className="mt-10 flex gap-3 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            className="mt-10 flex gap-3 overflow-x-auto scroll-smooth sm:overflow-x-hidden pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           >
 
             {testimonials.map((testimonial, index) => (
               <article
                 key={testimonial.name}
-                className="reveal reveal-up w-[280px] shrink-0 snap-start rounded-xl bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md sm:w-[calc((100%-24px)/3)] sm:p-5"
+                className="reveal reveal-up w-[280px] shrink-0 snap-start rounded-xl bg-white p-4 shadow-sm transition duration-300 sm:w-[calc((100%-24px)/3)] sm:p-5"
                 style={{ transitionDelay: `${(index % 3) * 100}ms` }}
               >
 
@@ -183,11 +175,13 @@ function Testimonials() {
                 {/* ================= USER ================= */}
                 <div className="mt-5 flex items-center gap-3">
 
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="h-8 w-8 rounded-full object-cover"
-                  />
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-500 text-[11px] font-semibold uppercase text-white">
+                    {testimonial.name
+                      .split(" ")
+                      .map((word) => word.charAt(0))
+                      .slice(0, 2)
+                      .join("")}
+                  </div>
 
                   <div className="min-w-0">
 

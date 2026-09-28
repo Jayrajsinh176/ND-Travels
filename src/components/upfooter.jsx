@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Upfooter() {
   return (
     <section
@@ -11,7 +13,7 @@ function Upfooter() {
 
           {/* Background Image */}
           <img
-            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1800&q=85"
+            src="/images/upfooter.webp"
             alt="Travel adventure in the desert"
             className="absolute inset-0 h-full w-full object-cover"
           />
@@ -30,7 +32,7 @@ function Upfooter() {
               {/* Badge */}
               <div className="mb-4 inline-flex rounded-full bg-white/15 px-4 py-1.5 backdrop-blur-sm">
                 <span className="text-[11px] font-medium uppercase tracking-wide text-white">
-                  Global Adventures
+                  Discover Gujarat
                 </span>
               </div>
 
@@ -42,12 +44,12 @@ function Upfooter() {
               </h2>
 
               {/* Button */}
-              <a
-                href="#booking"
+              <Link
+                to="/contact"
                 className="mt-7 inline-flex rounded-full bg-orange-500 px-7 py-3 text-xs font-medium text-white shadow-lg transition duration-200 hover:bg-orange-600 hover:shadow-xl active:scale-95"
               >
                 Book Now
-              </a>
+              </Link>
 
             </div>
 

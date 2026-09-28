@@ -67,7 +67,7 @@ function TravelBenefits() {
           <div className="reveal reveal-scale relative min-h-[420px] overflow-hidden rounded-2xl sm:min-h-[500px] lg:row-span-2">
 
             <img
-              src="/images/eartiga_benefit.png"
+              src="/images/eartiga_benefit.webp"
               alt="Comfortable travel and transportation"
               className="absolute inset-0 h-full w-full object-cover"
             />
@@ -178,7 +178,7 @@ function TravelBenefits() {
           >
 
             <img
-              src="/images/stay_benefit.png"
+              src="/images/stay_benefit.webp"
               alt="Comfortable hotel accommodation"
               className="absolute inset-0 h-full w-full object-cover"
             />

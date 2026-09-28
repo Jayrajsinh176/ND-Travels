@@ -10,7 +10,7 @@ function TaxiFare() {
     {
       name: "Swift Dzire",
       subtitle: "Comfort Sedan",
-      image: "/images/Swiftdizer.png",
+      image: "/images/Taxi/Swiftdizer.webp",
       description: "4 Person",
       seats: "4+1",
       type: "Sedan",
@@ -19,7 +19,7 @@ function TaxiFare() {
     {
       name: "Ertiga",
       subtitle: "Family Car",
-      image: "/images/Ertiga.png",
+      image: "/images/Taxi/Ertiga.webp",
       description: "6 to 7 Person",
       seats: "6+1",
       type: "MUV",
@@ -28,7 +28,7 @@ function TaxiFare() {
     {
       name: "Innova",
       subtitle: "Premium Travel",
-      image: "/images/Innova.png",
+      image: "/images/Taxi/Innova.webp",
       description: "7 to 8 Person",
       seats: "7+1",
       type: "Premium",
@@ -37,7 +37,7 @@ function TaxiFare() {
     {
       name: "Tavera",
       subtitle: "Group Travel",
-      image: "/images/Tavera.png",
+      image: "/images/Taxi/Tavera.webp",
       description: "7 Person",
       seats: "7",
       type: "MUV",
@@ -46,7 +46,7 @@ function TaxiFare() {
     {
       name: "Urbania",
       subtitle: "Premium Group Travel",
-      image: "/images/Urbania.png",
+      image: "/images/Taxi/Urbania.webp",
       description: "12 to 17 Person",
       seats: "12-17",
       type: "Luxury",
@@ -55,7 +55,7 @@ function TaxiFare() {
     {
       name: "Tempo Traveller",
       subtitle: "Large Group Travel",
-      image: "/images/TempoTraveller.png",
+      image: "/images/Taxi/TempoTraveller.webp",
       description: "12 to 17 Person",
       seats: "12-17",
       type: "Traveller",

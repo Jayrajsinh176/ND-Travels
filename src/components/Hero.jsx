@@ -10,7 +10,7 @@ const destinations = [
     slug: "statue-of-unity-kevadia",
     description:
       "Explore the iconic Statue of Unity, beautiful gardens, Narmada River views, and the major attractions of Kevadia.",
-    image: "/images/Statue_destination.png",
+    image: "/images/slider/Statue_destination.png",
     duration: "3 Days / 2 Nights",
   },
 
@@ -19,7 +19,7 @@ const destinations = [
     slug: "rann-of-kutch",
     description:
       "Experience the magical white desert, colorful culture, traditional handicrafts, villages, and unforgettable sunsets.",
-    image: "/images/kutch_destination.png",
+    image: "/images/slider/kutch_destination.png",
     duration: "4 Days / 3 Nights",
   },
 
@@ -28,7 +28,7 @@ const destinations = [
     slug: "somnath-gir",
     description:
       "Enjoy a memorable combination of the sacred Somnath Temple and the wildlife-rich forests of Gir National Park.",
-    image: "/images/somnath_destination.png",
+    image: "/images/slider/somnath_destination.png",
     duration: "3 Days / 2 Nights",
   },
 
@@ -37,7 +37,7 @@ const destinations = [
     slug: "udaipur",
     description:
       "Discover magnificent palaces, beautiful lakes, historic landmarks, and the royal heritage of Udaipur.",
-    image: "/images/udaipur_destination.png",
+    image: "/images/slider/udaipur_destination.webp",
     duration: "3 Days / 2 Nights",
   },
 
@@ -46,7 +46,7 @@ const destinations = [
     slug: "diu",
     description:
       "Enjoy beautiful beaches, historic forts, Portuguese heritage, and peaceful Arabian Sea views.",
-    image: "/images/diu_destination.png",
+    image: "/images/slider/diu_destination.png",
     duration: "2 Days / 1 Night",
   },
 ];
@@ -55,9 +55,9 @@ const destinations = [
 // HERO SLIDER IMAGES
 // ===============================
 const heroImages = [
-  "/images/statue.png",
-  "/images/kutch.png",
-  "/images/waterfall.png",
+  "/images/hero/statue.webp",
+  "/images/hero/kutch.webp",
+  "/images/hero/waterfall.webp",
 ];
 
 function Hero() {
@@ -86,7 +86,7 @@ function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center sm:hidden"
         style={{
-          backgroundImage: "url('/images/statuehero.png')",
+          backgroundImage: "url('/images/statuehero.webp')",
         }}
       />
 

@@ -182,14 +182,14 @@ function Footer() {
 
               <div>
                 <p className="text-xs text-white/65 sm:text-[13px]">
-                  Sunday-Friday: 08am-9pm
+                  Mon - Sat: 10:00 AM - 06:00 PM
                 </p>
 
                 <a
                   href="tel:+18005553456"
                   className="mt-1 block text-xs font-medium text-orange-400 transition hover:text-orange-300 sm:text-[13px]"
                 >
-                  +1 (800) 555-3456
+                  +91 9586995291
                 </a>
               </div>
             </div>
@@ -207,7 +207,7 @@ function Footer() {
                   href="mailto:info@rudranshtravels.com"
                   className="mt-1 block text-xs font-medium text-orange-400 transition hover:text-orange-300 sm:text-[13px]"
                 >
-                  info@rudranshtravels.com
+                  info@ndtoursandtravels.com
                 </a>
               </div>
             </div>

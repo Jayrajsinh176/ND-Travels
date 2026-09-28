@@ -6,7 +6,7 @@ function PopularDestinations() {
       name: "Statue of Unity, Kevadia",
       slug: "statue-of-unity-kevadia",
       image:
-        "/images/popstatue.png",
+        "/images/popstatue.webp",
       description:
         "Explore the iconic Statue of Unity, beautiful gardens, Narmada River views, and the major attractions of Kevadia.",
       duration: "3 Days / 2 Nights",
@@ -16,7 +16,7 @@ function PopularDestinations() {
       name: "Rann of Kutch",
       slug: "rann-of-kutch",
       image:
-        "/images/popkutch.png",
+        "/images/popkutch.webp",
       description:
         "Experience the magical white desert, colorful culture, traditional handicrafts, villages, and unforgettable sunsets.",
       duration: "4 Days / 3 Nights",
@@ -26,7 +26,7 @@ function PopularDestinations() {
       name: "Somnath + Gir National Park",
       slug: "somnath-gir",
       image:
-        "/images/popgir.png",
+        "/images/popgir.webp",
       description:
         "Enjoy a memorable combination of the sacred Somnath Temple and the wildlife-rich forests of Gir National Park.",
       duration: "3 Days / 2 Nights",

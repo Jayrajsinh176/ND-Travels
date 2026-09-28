@@ -8,7 +8,7 @@ function DestinationCards() {
       name: "Statue of Unity, Kevadia",
       slug: "statue-of-unity-kevadia",
       image:
-        "/images/Destination/statue.png",
+        "/images/Destination/statue.webp",
       description:
         "Explore the world's tallest statue, beautiful river views, Valley of Flowers, and nearby attractions in Kevadia.",
       duration: "3 Days / 2 Nights",
@@ -18,7 +18,7 @@ function DestinationCards() {
       name: "Rann of Kutch",
       slug: "rann-of-kutch",
       image:
-        "/images/Destination/kutch.png",
+        "/images/Destination/kutch.webp",
       description:
         "Experience the magical white salt desert, colorful culture, stunning sunsets, and traditional Gujarati hospitality.",
       duration: "4 Days / 3 Nights",
@@ -28,7 +28,7 @@ function DestinationCards() {
       name: "Somnath + Gir National Park",
       slug: "somnath-gir",
       image:
-        "/images/Destination/gir.png",
+        "/images/Destination/gir.webp",
       description:
         "Experience the spiritual beauty of Somnath Temple along with an exciting wildlife adventure in Gir National Park.",
       duration: "3 Days / 2 Nights",
@@ -38,7 +38,7 @@ function DestinationCards() {
       name: "Dwarkadhish Temple",
       slug: "dwarkadhish-temple",
       image:
-        "/images/Destination/dwarka.png",
+        "/images/Destination/dwarka.webp",
       description:
         "Discover the sacred city of Dwarka, visit the famous Dwarkadhish Temple, and experience its spiritual heritage.",
       duration: "2 Days / 1 Night",
@@ -48,7 +48,7 @@ function DestinationCards() {
       name: "Saputara Hill Station",
       slug: "saputara-hill-station",
       image:
-        "/images/Destination/saputara.png",
+        "/images/Destination/saputara.webp",
       description:
         "Relax among lush green hills, beautiful lakes, waterfalls, scenic viewpoints, and peaceful natural landscapes.",
       duration: "2 Days / 1 Night",
@@ -58,7 +58,7 @@ function DestinationCards() {
       name: "Udaipur",
       slug: "udaipur",
       image:
-        "/images/Destination/udaipur.png",
+        "/images/Destination/udaipur.webp",
       description:
         "Discover the City of Lakes with magnificent palaces, beautiful lakes, historic landmarks, and royal Rajasthani culture.",
       duration: "3 Days / 2 Nights",
@@ -67,7 +67,7 @@ function DestinationCards() {
   name: "Diu",
   slug: "diu",
   image:
-    "/images/Destination/diu.png",
+    "/images/Destination/diu.webp",
   description:
     "Enjoy beautiful beaches, historic forts, Portuguese heritage, coastal views, and relaxing seaside experiences in Diu.",
   duration: "2 Days / 1 Night",

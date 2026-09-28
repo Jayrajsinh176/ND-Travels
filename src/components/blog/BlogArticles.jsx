@@ -5,54 +5,54 @@ function BlogArticles() {
       title: "Best Places to Visit in Gujarat",
       category: "Gujarat Travel",
       image:
-        "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1000&q=80",
+        "/images/Blog/card 1.webp",
       description:
-        "Discover the best places to visit in Gujarat, including Ahmedabad, Dwarka, Somnath, Gir, Rann of Kutch, Statue of Unity and Saputara.",
+        "From the white salt desert of Kutch to the Asiatic lions of Gir, here are 7 Gujarat destinations worth adding to your itinerary: Ahmedabad, Dwarka, Somnath, Statue of Unity and Saputara.",
       date: "September 5, 2026",
     },
     {
       title: "Rann of Kutch Travel Guide: Best Time, Places & Things to Do",
       category: "Travel Guide",
       image:
-        "https://images.unsplash.com/photo-1609947017136-9daf32a5eb16?auto=format&fit=crop&w=1000&q=80",
+        "/images/Blog/card 2.webp",
       description:
-        "Plan your Rann of Kutch trip with information about the best time to visit, White Desert, nearby attractions, activities and travel tips.",
+        "Visit the White Rann between November and February, when the salt flats shine under the full moon and Rann Utsav tents open at Dhordo. Covers Kalo Dungar, Bhujodi craft villages and entry permits.",
       date: "September 3, 2026",
     },
     {
       title: "Dwarka Somnath Tour: Complete Travel Guide",
       category: "Pilgrimage Travel",
       image:
-        "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=1000&q=80",
+        "/images/Blog/card 3.webp",
       description:
-        "Plan a Dwarka and Somnath pilgrimage with a practical guide covering temples, nearby attractions, ideal duration and travel planning.",
+        "A 3 to 4 day pilgrimage route linking Dwarkadhish Temple, Nageshwar Jyotirlinga and Bet Dwarka with the seaside Somnath Jyotirlinga, with road distances and darshan tips.",
       date: "August 30, 2026",
     },
     {
       title: "Somnath and Gir Trip: Places to Visit & Travel Guide",
       category: "Gujarat Travel",
       image:
-        "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=1000&q=80",
+        "/images/Blog/card 4.webp",
       description:
-        "Combine the spiritual experience of Somnath with a Gir wildlife trip and discover the best attractions, routes and travel tips.",
+        "Pair the evening aarti at Somnath Temple with a lion safari in Sasan Gir, about 45 km away. Learn how to book Gir safari permits, when the park is open and where to stay.",
       date: "August 27, 2026",
     },
     {
       title: "Statue of Unity Travel Guide: Places to Visit & Best Time",
       category: "Places to Visit",
       image:
-        "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=1000&q=80",
+        "/images/Blog/card 5.webp",
       description:
-        "Everything you need to plan a Statue of Unity trip, including the best time to visit, attractions, activities and nearby places.",
+        "See the world's tallest statue at Kevadia, with its viewing gallery, laser light show, Valley of Flowers, Jungle Safari and Sardar Sarovar Dam, plus how to reach from Vadodara.",
       date: "August 24, 2026",
     },
     {
       title: "Saputara Travel Guide: Best Time, Attractions & Things to Do",
       category: "Hill Station",
       image:
-        "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=1000&q=80",
+        "/images/Blog/card 6.webp",
       description:
-        "Explore Saputara with useful information about the best time to visit, popular attractions, sightseeing and things to do.",
+        "Escape the summer heat in Gujarat's favourite hill station in the Sahyadri ranges of Dang: boating on Saputara Lake, ropeway rides, sunset points and Gira Falls in the monsoon.",
       date: "August 20, 2026",
     },
   ];

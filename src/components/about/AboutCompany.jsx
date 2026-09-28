@@ -37,7 +37,7 @@ function AboutCompany() {
           {/* Company Image */}
           <div className="reveal reveal-left overflow-hidden rounded-[20px]">
             <img
-              src="/images/hero.jpg"
+              src="/images/about.webp"
               alt="ND Tours and Travels travel experience"
               className="h-[500px] w-full object-cover"
             />

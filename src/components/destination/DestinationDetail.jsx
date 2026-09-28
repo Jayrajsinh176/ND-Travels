@@ -23,14 +23,14 @@ function DestinationDetail() {
       name: "Statue of Unity, Kevadia",
 
       image:
-        "/images/Placedetails/statuemain.png",
+        "/images/Placedetails/statuemain.webp",
 
       gallery: [
-        "/images/Placedetails/statueG1.png",
-        "/images/Placedetails/statueG2.png",
-        "/images/Placedetails/statueG3.png",
-        "/images/Placedetails/statueG4.png",
-        "/images/Placedetails/statueG5.png",
+        "/images/Placedetails/statueG1.webp",
+        "/images/Placedetails/statueG2.webp",
+        "/images/Placedetails/statueG3.webp",
+        "/images/Placedetails/statueG4.webp",
+        "/images/Placedetails/statueG5.webp",
       ],
 
       intro:
@@ -86,14 +86,14 @@ function DestinationDetail() {
       name: "Rann of Kutch",
 
       image:
-        "/images/Placedetails/kutchmain.png",
+        "/images/Placedetails/kutchmain.webp",
 
       gallery: [
-        "/images/Placedetails/kutchG1.png",
-        "/images/Placedetails/kutchG2.png",
-        "/images/Placedetails/kutchG3.png",
-        "/images/Placedetails/kutchG4.png",
-        "/images/Placedetails/kutchG5.png",
+        "/images/Placedetails/kutchG1.webp",
+        "/images/Placedetails/kutchG2.webp",
+        "/images/Placedetails/kutchG3.webp",
+        "/images/Placedetails/kutchG4.webp",
+        "/images/Placedetails/kutchG5.webp",
       ],
 
       intro:
@@ -149,14 +149,14 @@ function DestinationDetail() {
       name: "Somnath + Gir National Park",
 
       image:
-        "/images/Placedetails/girmain.png",
+        "/images/Placedetails/girmain.webp",
 
       gallery: [
-        "/images/Placedetails/girG1.png",
-        "/images/Placedetails/girG2.png",
-        "/images/Placedetails/girG3.png",
-        "/images/Placedetails/girG4.png",
-        "/images/Placedetails/girG5.png",
+        "/images/Placedetails/girG1.webp",
+        "/images/Placedetails/girG2.webp",
+        "/images/Placedetails/girG3.webp",
+        "/images/Placedetails/girG4.webp",
+        "/images/Placedetails/girG5.webp",
       ],
 
       intro:
@@ -212,14 +212,14 @@ function DestinationDetail() {
       name: "Dwarkadhish Temple",
 
       image:
-        "/images/Placedetails/dwarkamain.png",
+        "/images/Placedetails/dwarkamain.webp",
 
       gallery: [
-        "/images/Placedetails/dwarkaG1.png",
-        "/images/Placedetails/dwarkaG2.png",
-        "/images/Placedetails/dwarkaG3.png",
-        "/images/Placedetails/dwarkaG4.png",
-        "/images/Placedetails/dwarkaG5.png",
+        "/images/Placedetails/dwarkaG1.webp",
+        "/images/Placedetails/dwarkaG2.webp",
+        "/images/Placedetails/dwarkaG3.webp",
+        "/images/Placedetails/dwarkaG4.webp",
+        "/images/Placedetails/dwarkaG5.webp",
       ],
 
       intro:
@@ -275,13 +275,13 @@ function DestinationDetail() {
       name: "Saputara Hill Station",
 
       image:
-        "/images/Placedetails/saputaramain.png",
+        "/images/Placedetails/saputaramain.webp",
 
       gallery: [
 
-        "/images/Placedetails/saputaraG1.png",
-        "/images/Placedetails/saputaraG2.png",
-        "/images/Placedetails/saputaraG3.png",
+        "/images/Placedetails/saputaraG1.webp",
+        "/images/Placedetails/saputaraG2.webp",
+        "/images/Placedetails/saputaraG3.webp",
       ],
 
       intro:
@@ -337,15 +337,15 @@ function DestinationDetail() {
       name: "Udaipur",
 
       image:
-        "/images/Placedetails/udaipurmain.png",
+        "/images/Placedetails/udaipurmain.webp",
 
       gallery: [
-        "/images/Placedetails/udaipurG1.png",
-        "/images/Placedetails/udaipurG2.png",
-        "/images/Placedetails/udaipurG3.png",
-        "/images/Placedetails/udaipurG4.png",
-        "/images/Placedetails/udaipurG5.png",
-        "/images/Placedetails/udaipurG6.png",
+        "/images/Placedetails/udaipurG1.webp",
+        "/images/Placedetails/udaipurG2.webp",
+        "/images/Placedetails/udaipurG3.webp",
+        "/images/Placedetails/udaipurG4.webp",
+        "/images/Placedetails/udaipurG5.webp",
+        "/images/Placedetails/udaipurG6.webp",
       ],
 
       intro:
@@ -401,13 +401,13 @@ function DestinationDetail() {
       name: "Diu",
 
       image:
-        "/images/Placedetails/diumain.png",
+        "/images/Placedetails/diumain.webp",
 
       gallery: [
-        "/images/Placedetails/diuG1.png",
-        "/images/Placedetails/diuG2.png",
-        "/images/Placedetails/diuG3.png",
-        "/images/Placedetails/diuG4.png",
+        "/images/Placedetails/diuG1.webp",
+        "/images/Placedetails/diuG2.webp",
+        "/images/Placedetails/diuG3.webp",
+        "/images/Placedetails/diuG4.webp",
       ],
 
       intro:
