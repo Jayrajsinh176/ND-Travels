@@ -133,7 +133,7 @@ function Testimonials() {
           {/* ================= TESTIMONIAL SCROLL ================= */}
           <div
             ref={testimonialRef}
-            className="mt-10 flex gap-3 overflow-x-auto scroll-smooth sm:overflow-x-hidden pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            className="mt-10 flex gap-3 overflow-x-auto overflow-y-hidden overscroll-y-none scroll-smooth sm:overflow-x-hidden pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           >
 
             {testimonials.map((testimonial, index) => (

@@ -1,11 +1,57 @@
 import { useState } from "react";
+import { FiMapPin } from "react-icons/fi";
+import { FaBusAlt, FaCar, FaCarSide, FaCrown, FaTaxi } from "react-icons/fa";
+import CustomSelect from "./CustomSelect";
+
+const serviceOptions = [
+  {
+    value: "Travel Enquiry",
+    label: "Travel / Destination Enquiry",
+    description: "Plan a trip, tour package or destination visit",
+    icon: FiMapPin,
+  },
+  {
+    value: "Private Taxi",
+    label: "Private Taxi Booking",
+    description: "Book a car for pickup, drop or outstation travel",
+    icon: FaTaxi,
+  },
+];
+
+const vehicleOptions = [
+  {
+    value: "Sedan",
+    label: "Sedan",
+    description: "Comfortable ride for up to 4 passengers",
+    icon: FaCarSide,
+  },
+  {
+    value: "SUV",
+    label: "SUV",
+    description: "Spacious seating for 6–7 passengers",
+    icon: FaCar,
+  },
+  {
+    value: "Luxury Car",
+    label: "Luxury Car",
+    description: "Premium comfort for special occasions",
+    icon: FaCrown,
+  },
+  {
+    value: "Tempo Traveller",
+    label: "Tempo Traveller",
+    description: "Ideal for group trips and families",
+    icon: FaBusAlt,
+  },
+];
 
 function ContactForm() {
   const [serviceType, setServiceType] = useState("Travel Enquiry");
+  const [vehicle, setVehicle] = useState("");
   const [errors, setErrors] = useState({});
 
   // ND Tours and Travels WhatsApp number
-  const whatsappNumber = "917069013142";
+  const whatsappNumber = "919586995291";
 
   const validateForm = (formData) => {
     const newErrors = {};
@@ -174,6 +220,7 @@ Thank you.`;
 
   // Reset service type
   setServiceType("Travel Enquiry");
+  setVehicle("");
 
   // Clear validation errors
   setErrors({});
@@ -259,23 +306,15 @@ Thank you.`;
                   How can we help you?
                 </label>
 
-                <select
+                <CustomSelect
                   name="serviceType"
+                  options={serviceOptions}
                   value={serviceType}
-                  onChange={(e) => {
-                    setServiceType(e.target.value);
+                  onChange={(value) => {
+                    setServiceType(value);
                     setErrors({});
                   }}
-                  className={inputClass("serviceType")}
-                >
-                  <option value="Travel Enquiry">
-                    Travel / Destination Enquiry
-                  </option>
-
-                  <option value="Private Taxi">
-                    Private Taxi Booking
-                  </option>
-                </select>
+                />
               </div>
 
               {/* Name + Email */}
@@ -384,32 +423,18 @@ Thank you.`;
                       Vehicle Type
                     </label>
 
-                    <select
+                    <CustomSelect
                       name="vehicle"
-                      defaultValue=""
-                      className={inputClass("vehicle")}
-                      onChange={() => clearError("vehicle")}
-                    >
-                      <option value="" disabled>
-                        Select vehicle type
-                      </option>
-
-                      <option value="Sedan">
-                        Sedan
-                      </option>
-
-                      <option value="SUV">
-                        SUV
-                      </option>
-
-                      <option value="Luxury Car">
-                        Luxury Car
-                      </option>
-
-                      <option value="Tempo Traveller">
-                        Tempo Traveller
-                      </option>
-                    </select>
+                      options={vehicleOptions}
+                      value={vehicle}
+                      placeholder="Select vehicle type"
+                      placeholderIcon={FaCarSide}
+                      hasError={Boolean(errors.vehicle)}
+                      onChange={(value) => {
+                        setVehicle(value);
+                        clearError("vehicle");
+                      }}
+                    />
 
                     {errors.vehicle && (
                       <p className="mt-1.5 text-xs text-red-500">

@@ -117,7 +117,7 @@ function HomeIntro() {
 
                             {/* Stat 1 */}
                             <div className="reveal reveal-up">
-                                <div className="text-2xl font-light text-orange-500 sm:text-3xl">
+                                <div className="text-2xl font-bold text-orange-500 sm:text-3xl">
                                     <CountUp
                                         end={2}
                                         suffix="+"
@@ -137,7 +137,7 @@ function HomeIntro() {
                                 className="reveal reveal-up"
                                 style={{ transitionDelay: "100ms" }}
                             >
-                                <div className="text-2xl font-light text-orange-500 sm:text-3xl">
+                                <div className="text-2xl font-bold text-orange-500 sm:text-3xl">
                                     <CountUp
                                         end={5000}
                                         suffix="+"
@@ -157,7 +157,7 @@ function HomeIntro() {
                                 className="reveal reveal-up"
                                 style={{ transitionDelay: "200ms" }}
                             >
-                                <div className="text-2xl font-light text-orange-500 sm:text-3xl">
+                                <div className="text-2xl font-bold text-orange-500 sm:text-3xl">
                                     <CountUp
                                         end={10}
                                         suffix="+"

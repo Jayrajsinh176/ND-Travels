@@ -1,7 +1,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 function WhatsAppButton() {
-  const phoneNumber = "917069013142"; // Your actual WhatsApp number
+  const phoneNumber = "919586995291"; // Your actual WhatsApp number
 
   const message =
     "Hello ND Tours and Travels, I’m interested in your travel packages and would like to know more about the available options. Could you please assist me?";

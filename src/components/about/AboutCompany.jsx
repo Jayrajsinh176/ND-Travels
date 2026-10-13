@@ -1,6 +1,35 @@
+import { useEffect, useRef } from "react";
 import { FiCheck } from "react-icons/fi";
 
 function AboutCompany() {
+  const detailsRef = useRef(null);
+  const valuesRef = useRef(null);
+
+  // Paragraphs end where the checklist text ends
+  useEffect(() => {
+    const details = detailsRef.current;
+    const valuesList = valuesRef.current;
+    if (!details || !valuesList) return;
+
+    const updateWidth = () => {
+      const left = details.getBoundingClientRect().left;
+      const right = Math.max(
+        ...[...valuesList.querySelectorAll("[data-value-text]")].map(
+          (span) => span.getBoundingClientRect().right
+        )
+      );
+      details.style.setProperty("--text-w", `${Math.ceil(right - left)}px`);
+    };
+
+    const observer = new ResizeObserver(updateWidth);
+    observer.observe(details);
+    valuesList
+      .querySelectorAll("[data-value-text]")
+      .forEach((span) => observer.observe(span));
+
+    return () => observer.disconnect();
+  }, []);
+
   const values = [
     "Personalized travel experiences",
     "Trusted global travel partnerships",
@@ -44,7 +73,7 @@ function AboutCompany() {
           </div>
 
           {/* Company Details */}
-          <div className="reveal reveal-right">
+          <div ref={detailsRef} className="reveal reveal-right">
 
             {/* Label */}
             <p className="text-[13px] font-semibold uppercase tracking-[0.18em] text-orange-500">
@@ -59,7 +88,7 @@ function AboutCompany() {
             </h2>
 
             {/* Intro */}
-            <p className="mt-5 max-w-[500px] text-[13px] leading-6 text-gray-600">
+            <p className="mt-5 text-[13px] leading-6 sm:max-w-[var(--text-w)] text-gray-600">
               ND Tours and Travels is a travel and transportation company
               dedicated to making every journey simple, comfortable,
               and memorable. From planning your trip to getting you
@@ -73,7 +102,7 @@ function AboutCompany() {
                 Our Story
               </h3>
 
-              <p className="mt-2 max-w-[500px] text-[13px] leading-6 text-gray-600">
+              <p className="mt-2 text-[13px] leading-6 text-gray-600 sm:max-w-[var(--text-w)]">
                 Built from a passion for travel and exceptional
                 service, ND Tours and Travels brings together travel planning,
                 transportation, and destination assistance under
@@ -89,7 +118,7 @@ function AboutCompany() {
                 Our Approach
               </h3>
 
-              <p className="mt-2 max-w-[500px] text-[13px] leading-6 text-gray-600">
+              <p className="mt-2 text-[13px] leading-6 text-gray-600 sm:max-w-[var(--text-w)]">
                 We believe great travel starts with understanding
                 what our customers need. Our team combines
                 personalized planning, reliable transportation,
@@ -99,7 +128,7 @@ function AboutCompany() {
             </div>
 
             {/* Values */}
-            <div className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <div ref={valuesRef} className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {values.map((value) => (
                 <div
                   key={value}
@@ -109,7 +138,7 @@ function AboutCompany() {
                     <FiCheck size={9} strokeWidth={3} />
                   </span>
 
-                  <span className="text-[12px] font-medium text-[#17375f]">
+                  <span data-value-text className="text-[12px] font-medium text-[#17375f]">
                     {value}
                   </span>
                 </div>

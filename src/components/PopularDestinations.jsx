@@ -38,7 +38,7 @@ function PopularDestinations() {
   // =========================================================
   const handleBooking = (destination) => {
     // Your WhatsApp number
-    const whatsappNumber = "917069013142";
+    const whatsappNumber = "919586995291";
 
     const message = `Hello ND Tours and Travels,
 

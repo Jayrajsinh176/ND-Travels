@@ -65,7 +65,7 @@ function TaxiFare() {
 
   const handleBooking = (carName) => {
     // ND Tours and Travels WhatsApp number
-    const whatsappNumber = "917069013142";
+    const whatsappNumber = "919586995291";
 
     const message = `Hello ND Tours and Travels,
 

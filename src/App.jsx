@@ -16,6 +16,7 @@ import TaxiService from "./pages/TaxiService";
 import DestinationDetailHero from "./components/destination/DestinationDetailHero";
 import DestinationDetail from "./components/destination/DestinationDetail";
 import Blog from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
 import Legal from "./pages/Legal";
 
 
@@ -57,6 +58,7 @@ function App() {
         
         {/* Blog */}
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogDetail />} />
 
         {/* Legal */}
         <Route path="/legal" element={<Legal />} />

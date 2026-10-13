@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   FiMapPin,
   FiBriefcase,
@@ -6,6 +7,8 @@ import {
 } from "react-icons/fi";
 
 function QuickSteps() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   const steps = [
     {
       number: "01",
@@ -13,6 +16,8 @@ function QuickSteps() {
       description:
         "Start your journey by exploring destinations that match your dreams, style, and travel goals.",
       icon: FiMapPin,
+      image: "/images/Quick1.webp",
+      alt: "Traveler exploring a destination",
     },
     {
       number: "02",
@@ -20,6 +25,8 @@ function QuickSteps() {
       description:
         "Choose the best flights, hotels, and packages with ease through our seamless booking experience.",
       icon: FiBriefcase,
+      image: "/images/Quick2.webp",
+      alt: "Luxury resort with an infinity pool at sunset",
     },
     {
       number: "03",
@@ -27,6 +34,8 @@ function QuickSteps() {
       description:
         "Make fast and secure payments with flexible options designed for your convenience and peace of mind.",
       icon: FiCreditCard,
+      image: "/images/Quick3.webp",
+      alt: "Comfortable taxi ready for your trip",
     },
     {
       number: "04",
@@ -34,6 +43,8 @@ function QuickSteps() {
       description:
         "Relax and explore while ND Tours and Travels handles every detail, ensuring a smooth and unforgettable journey.",
       icon: FiGlobe,
+      image: "/images/Quick4.webp",
+      alt: "Enjoying the scenic views of Udaipur",
     },
   ];
 
@@ -70,12 +81,17 @@ function QuickSteps() {
                 return (
                   <div
                     key={step.number}
-                    className={`reveal reveal-up group flex gap-4 rounded-2xl p-4 transition duration-300 ${
-                      index === 0
-                        ? "border border-slate-200 bg-[#f7f7f7]"
-                        : "border border-transparent hover:border-slate-200 hover:bg-[#f7f7f7]"
-                    }`}
+                    className="reveal reveal-up"
                     style={{ transitionDelay: `${index * 100}ms` }}
+                  >
+                  <div
+                    onMouseEnter={() => setActiveIndex(index)}
+                    onMouseLeave={() => setActiveIndex(0)}
+                    className={`group flex gap-4 rounded-2xl p-4 transition duration-300 ${
+                      index === activeIndex
+                        ? "border border-slate-200 bg-[#f7f7f7]"
+                        : "border border-transparent"
+                    }`}
                   >
 
                     {/* Icon */}
@@ -96,6 +112,7 @@ function QuickSteps() {
 
                     </div>
                   </div>
+                  </div>
                 );
               })}
 
@@ -107,11 +124,22 @@ function QuickSteps() {
 
             <div className="relative mx-auto w-full max-w-lg overflow-hidden rounded-2xl">
 
-              <img
-                src="/images/quick.webp"
-                alt="Traveler exploring a destination"
-                className="aspect-[4/4.2] w-full object-cover"
-              />
+              {/* Keeps the frame's aspect ratio while images are stacked */}
+              <div className="aspect-[4/4.2] w-full" />
+
+              {steps.map((step, index) => (
+                <img
+                  key={step.number}
+                  src={step.image}
+                  alt={step.alt}
+                  aria-hidden={index !== activeIndex}
+                  className={`absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-out ${
+                    index === activeIndex
+                      ? "scale-100 opacity-100"
+                      : "scale-105 opacity-0"
+                  }`}
+                />
+              ))}
 
             </div>
 
